@@ -153,7 +153,7 @@ p {
 h1 {
   max-width: 980px;
   margin: 0;
-  font-size: clamp(4.4rem, 12vw, 10.8rem);
+  font-size: clamp(4.4rem, 12vw, 6.8rem);
   line-height: 0.88;
   font-weight: 900;
   letter-spacing: 0;
@@ -243,11 +243,11 @@ h1 span {
 }
 
 .course-grid article {
-  min-height: 190px;
+  min-height: 100px;
   padding: 1.25rem;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.035);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .course-grid span {
