@@ -230,7 +230,7 @@ h1 span {
 
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(2.2rem, 2.5vw, 5.2rem);
+  font-size: clamp(2.0rem, 3vw, 5.2rem);
   line-height: 1;
   letter-spacing: 0;
 }
