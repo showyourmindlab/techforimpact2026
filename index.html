@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech for Impact 2026 Showcase</title>
+    <meta name="description" content="서강대학교 ART & TECHNOLOGY X 카카오임팩트 테크포임팩트 2026 쇼케이스">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tech for Impact 2026">
+        <span>TECH FOR IMPACT</span> 
+        <strong>2026</strong>
+      </a>
+      <nav aria-label="주요 섹션">
+        <a href="#course">Course</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">SOGANG ART&TECH X KAKAO IMPACT</p>
+          <h1 id="hero-title">Art,<br>Technology,<br><span>and Social Impact</span></h1>
+          <p class="hero-lead">
+            현 시대 우리 사회의 문제를 탐구하고, 기술과 예술로 개입하여, 더 나은 변화를 실험한 8개의 프로젝트.
+          </p>
+        </div>
+        <div class="hero-panel reveal">
+          <p>2026 Showcase</p>
+          <dl>
+            <div><dt>Teams</dt><dd>8</dd></div>
+            <div><dt>Themes</dt><dd>4</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="course section" id="course" aria-labelledby="course-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Course Info</p>
+          <h2 id="course-title">기술과 예술로 세상을 바꾸다.</h2>
+        </div>
+        <div class="course-grid reveal">
+          <article>
+            <span>Course Title</span>
+            <strong>Art, Technology, and Social Impact</strong>
+          </article>
+          <article>
+            <span>Co-operated by</span>
+            <strong>서강대학교 ART & TECHNOLOGY 학과<br><br>카카오임팩트 테크포임팩트 캠퍼스 프로그램</strong>
+          </article>
+          <article>
+            <span>Instructor / TA</span>
+            <strong>김주섭 교수 / 이형복</strong>
+          </article>
+          <article>
+            <span>Acknowledgment</span>
+            <strong>서울시 RISE 사업 글로벌 캡스톤 프로젝트 지원 프로그램</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="showcase section" id="showcase" aria-labelledby="showcase-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project Archive</p>
+          <h2 id="showcase-title">8 Teams, 8 Answers to Social Problems.</h2>
+        </div>
+        <div class="toolbar reveal" aria-label="프로젝트 필터">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="마음건강">마음건강</button>
+          <button class="filter" type="button" data-filter="기후환경">기후환경</button>
+          <button class="filter" type="button" data-filter="지방소멸">지방소멸</button>
+          <button class="filter" type="button" data-filter="관계인구">관계인구</button>
+          <button class="filter" type="button" data-filter="고립은둔">고립은둔</button>
+        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div>
+        <p class="eyebrow">SOGANG UNIVERSITY DEPT of ART & TECHNOLOGY</p>
+        <h2>ART, TECHNOLOGY, AND SOCIAL IMPACT</h2>
+      </div>
+      <p>
+        Contacts<br>
+        atstaff@u.sogang.ac.kr<br><br>
+        본 수업은 서강대학교 ART & TECHNOLOGY 학과의 <br> <a class="eyebrow" href="https://artwithimpact.vercel.app">ART WITH IMPACT</a> 프로그램과 카카오임팩트 테크포임팩트 프로그램에서 공동으로 운영하였습니다.<br>
+        
+      </p>
+    </footer>
+
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="닫기" data-close-modal>×</button>
+        <div id="modal-content"></div>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
