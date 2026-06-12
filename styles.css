@@ -153,7 +153,7 @@ p {
 h1 {
   max-width: 980px;
   margin: 0;
-  font-size: clamp(4.4rem, 12vw, 6.8rem);
+  font-size: clamp(4.4rem, 12vw, 5.8rem);
   line-height: 0.88;
   font-weight: 900;
   letter-spacing: 0;
@@ -230,7 +230,7 @@ h1 span {
 
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(2.0rem, 3vw, 5.2rem);
+  font-size: clamp(2.0rem, 2vw, 2.0rem);
   line-height: 1;
   letter-spacing: 0;
 }
