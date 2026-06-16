@@ -12,7 +12,7 @@ const projects = [
     background: "고기능 우울증은 학업이나 직장 생활을 정상적으로 유지하는 것처럼 보이지만 내면에서는 지속적인 피로감과 무기력을 경험하는 상태입니다. 치료 중심 정신건강 서비스는 심리적 진입 장벽이 높고 일상 밀착형 개입이 부족해, 도움이 필요하지만 도움을 찾지 않는 청년에게 구조적 공백을 남깁니다.",
     objectives: "고기능 우울을 경험하거나 공감하는 청년층을 대상으로, 식물 관리 서비스의 외형을 띤 RootMate를 배포해 일상 속에서 부담 없이 자기 자신을 돌아보는 루틴을 형성하도록 돕고 마음 건강 관리에 대한 인식을 개선합니다.",
     impact: "2026년 8월 정식 배포를 목표로 유저 테스트와 전문가 자문을 반영합니다. 앱 실사용자 100명을 달성하고, 장기적으로 씨앗 키트 판매와 앱 운영을 연계한 지속 가능한 모델로 확장합니다.",
-    video: "https://drive.google.com/file/d/1HfQ8z47wOuR-Xuc9d6lGJwJ4nQ5cHJGQ/preview"
+    video: "https://drive.google.com/file/d/1rZPm-joqCAEnKxIJnR6lKOu59SqQxo0w/view?usp=sharing"
   },
   {
     id: 2,
