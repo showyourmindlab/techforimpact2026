@@ -12,7 +12,7 @@ const projects = [
     background: "고기능 우울증은 학업이나 직장 생활을 정상적으로 유지하는 것처럼 보이지만 내면에서는 지속적인 피로감과 무기력을 경험하는 상태입니다. 치료 중심 정신건강 서비스는 심리적 진입 장벽이 높고 일상 밀착형 개입이 부족해, 도움이 필요하지만 도움을 찾지 않는 청년에게 구조적 공백을 남깁니다.",
     objectives: "고기능 우울을 경험하거나 공감하는 청년층을 대상으로, 식물 관리 서비스의 외형을 띤 RootMate를 배포해 일상 속에서 부담 없이 자기 자신을 돌아보는 루틴을 형성하도록 돕고 마음 건강 관리에 대한 인식을 개선합니다.",
     impact: "2026년 8월 정식 배포를 목표로 유저 테스트와 전문가 자문을 반영합니다. 앱 실사용자 100명을 달성하고, 장기적으로 씨앗 키트 판매와 앱 운영을 연계한 지속 가능한 모델로 확장합니다.",
-    video: "https://drive.google.com/file/d/1rZPm-joqCAEnKxIJnR6lKOu59SqQxo0w/view?usp=sharing"
+    video: "https://drive.google.com/file/d/1rZPm-joqCAEnKxIJnR6lKOu59SqQxo0w/preview"
   },
   {
     id: 2,
@@ -87,7 +87,7 @@ const projects = [
     background: "청년의 지방 이주는 지역 소멸 해법으로 주목받지만 관심과 정착 사이에는 큰 간극이 있습니다. 짧은 여행이나 파편적 정보만으로는 실제 생활의 결을 느끼기 어렵고, 관계인구의 첫 접점을 만들어주는 도구도 부족합니다.",
     objectives: "귀촌과 지역 이주에 막연한 호감을 가진 청년, 특히 사회초년생을 대상으로 지역의 삶을 미리 체험하는 웹을 배포합니다. 직관적 체험, 사용자 성향에 맞는 지역 추천, 가상 체험을 실제 방문과 체류로 연결하는 경로 마련을 목표로 합니다.",
     impact: "사용자는 지역 라이프스타일을 자연스럽게 경험하고 익숙한 지역 너머 자신의 취향에 맞는 곳을 발견합니다. 지역은 장소가 아니라 삶의 방식으로 소개되고, 레지던스와 체류 프로그램 운영 기관에는 잠재 이주자와 만나는 디지털 관문이 생깁니다.",
-    video: "https://drive.google.com/file/d/1HfQ8z47wOuR-Xuc9d6lGJwJ4nQ5cHJGQ/preview"
+    video: "https://drive.google.com/file/d/1DaYAirY4FbjfLmaRmvqOlgmH2SuBXnRW/preview"
   },
   {
     id: 7,
