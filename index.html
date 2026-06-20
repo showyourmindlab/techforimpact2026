@@ -19,7 +19,8 @@
       </a>
       <nav aria-label="주요 섹션">
         <a href="#course">About</a>
-        <a href="#showcase">Showcase</a>
+        <a href="#showcase">Project Archive</a>
+        <a href="#demoday">Demo Day</a>
         <a href="#footer">Contact</a>
       </nav>
     </header>
@@ -51,7 +52,8 @@
         <div class="course-grid reveal">
           <article>
             <span>Course Title</span>
-            <strong><a class="eyebrow" href="https://app.notion.com/p/26-1-Art-Technology-and-Social-Impact-2fdba058f8ce8091b352f3b9b20bb550">AATG800/ANT5800 Art, Technology, and Social Impact</a></strong>
+            AATG800/ANT5800 
+            <strong><a class="eyebrow" href="https://app.notion.com/p/26-1-Art-Technology-and-Social-Impact-2fdba058f8ce8091b352f3b9b20bb550">Art, Technology, and Social Impact</a></strong>
           </article>
           <article>
             <span>Co-operated by</span>
@@ -91,7 +93,7 @@
       <section class="showcase section" id="showcase" aria-labelledby="showcase-title">
         <div class="section-heading reveal">
           <p class="eyebrow">Project Archive</p>
-          <h2 id="showcase-title">Eight Teams, 8 Answers to Social Problems.</h2>
+          <h2 id="showcase-title">더 나은 사회를 위한 8개 팀의 8가지 제안</h2>
         </div>
         <div class="toolbar reveal" aria-label="프로젝트 필터">
           <button class="filter active" type="button" data-filter="all">All</button>
@@ -101,6 +103,87 @@
           <button class="filter" type="button" data-filter="고립은둔">고립은둔</button>
         </div>
         <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="demoday section" id="demoday" aria-labelledby="demoday-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Demo Day</p>
+          <h2 id="demoday-title">데모데이 현장 스케치</h2>
+        </div>
+        <div class="demoday-grid reveal">
+          <div class="demoday-card" data-index="0">
+            <img src="1.jpg" alt="Demo Day Photo 1" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">01</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="1">
+            <img src="2.jpg" alt="Demo Day Photo 2" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">02</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="2">
+            <img src="3.jpg" alt="Demo Day Photo 3" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">03</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="3">
+            <img src="4.jpg" alt="Demo Day Photo 4" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">04</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="4">
+            <img src="5.jpg" alt="Demo Day Photo 5" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">05</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="5">
+            <img src="6.jpg" alt="Demo Day Photo 6" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">06</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="6">
+            <img src="7.jpg" alt="Demo Day Photo 7" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">07</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="7">
+            <img src="8.jpg" alt="Demo Day Photo 8" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">08</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="8">
+            <img src="9.jpg" alt="Demo Day Photo 9" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">09</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="9">
+            <img src="10.jpg" alt="Demo Day Photo 10" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">10</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="10">
+            <img src="11.jpg" alt="Demo Day Photo 11" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">11</span>
+            </div>
+          </div>
+          <div class="demoday-card" data-index="11">
+            <img src="12.jpg" alt="Demo Day Photo 12" loading="lazy">
+            <div class="demoday-overlay">
+              <span class="demoday-number">12</span>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -123,6 +206,18 @@
         <button class="modal-close" type="button" aria-label="닫기" data-close-modal>×</button>
         <div id="modal-content"></div>
       </article>
+    </div>
+
+    <!-- Lightbox Modal for Demo Day -->
+    <div class="lightbox" id="demoday-lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close-lightbox></div>
+      <button class="lightbox-close" type="button" aria-label="닫기" data-close-lightbox>×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="이전 이미지">&#10216;</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Demo Day Zoomed Image">
+        <div class="lightbox-counter">1 / 11</div>
+      </div>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="다음 이미지">&#10217;</button>
     </div>
 
     <script src="script.js"></script>

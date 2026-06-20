@@ -222,7 +222,14 @@ modal.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+  if (event.key === "Escape") {
+    if (modal && modal.classList.contains("is-open")) closeModal();
+    if (lightbox && lightbox.classList.contains("is-open")) closeLightbox();
+  }
+  if (lightbox && lightbox.classList.contains("is-open")) {
+    if (event.key === "ArrowRight") nextLightboxImage();
+    if (event.key === "ArrowLeft") prevLightboxImage();
+  }
 });
 
 document.addEventListener("pointermove", (event) => {
@@ -298,6 +305,69 @@ function initCanvas() {
   resize();
   draw();
   window.addEventListener("resize", resize);
+}
+
+// Demo Day Lightbox
+const demodayImages = [
+  "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg",
+  "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg"
+];
+let currentImageIndex = 0;
+
+const demodayGrid = document.querySelector(".demoday-grid");
+const lightbox = document.querySelector("#demoday-lightbox");
+const lightboxImg = document.querySelector("#lightbox-img");
+const lightboxCounter = document.querySelector(".lightbox-counter");
+const lightboxPrev = document.querySelector(".lightbox-prev");
+const lightboxNext = document.querySelector(".lightbox-next");
+
+function openLightbox(index) {
+  currentImageIndex = Number(index);
+  updateLightbox();
+  lightbox.classList.add("is-open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function updateLightbox() {
+  lightboxImg.src = demodayImages[currentImageIndex];
+  lightboxCounter.textContent = `${currentImageIndex + 1} / ${demodayImages.length}`;
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("is-open");
+  lightbox.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
+function nextLightboxImage() {
+  currentImageIndex = (currentImageIndex + 1) % demodayImages.length;
+  updateLightbox();
+}
+
+function prevLightboxImage() {
+  currentImageIndex = (currentImageIndex - 1 + demodayImages.length) % demodayImages.length;
+  updateLightbox();
+}
+
+if (demodayGrid) {
+  demodayGrid.addEventListener("click", (event) => {
+    const card = event.target.closest(".demoday-card");
+    if (card) {
+      openLightbox(card.dataset.index);
+    }
+  });
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target.matches("[data-close-lightbox]")) {
+      closeLightbox();
+    }
+  });
+
+  if (lightboxPrev) lightboxPrev.addEventListener("click", prevLightboxImage);
+  if (lightboxNext) lightboxNext.addEventListener("click", nextLightboxImage);
 }
 
 renderProjects();
