@@ -709,6 +709,35 @@ h1 span {
   }
 }
 
+/* Sketch Section */
+.sketch-video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sketch-video-container:hover {
+  transform: translateY(-4px) scale(1.005);
+  border-color: rgba(38, 168, 255, 0.45);
+  box-shadow: 0 24px 48px rgba(38, 168, 255, 0.15);
+}
+
+.sketch-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* Demo Day Section */
 .demoday-grid {
   display: grid;
